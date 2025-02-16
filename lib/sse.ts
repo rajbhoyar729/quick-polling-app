@@ -1,4 +1,4 @@
-import prisma from '../lib/db';
+import prisma from '@/lib/db';
 
 export function createSSEStream(pollId: string) {
   return new Response(

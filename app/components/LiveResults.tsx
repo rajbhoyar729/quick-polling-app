@@ -1,3 +1,5 @@
+'use client'; // Add this line to mark the component as a client component
+
 import { useEffect, useState } from 'react';
 
 interface PollOption {
@@ -23,7 +25,7 @@ export default function LiveResults({ pollId }: { pollId: string }) {
     <div>
       <h2>Live Results</h2>
       <ul>
-        {results.map((option: PollOption, index: number) => (
+        {results.map((option, index) => (
           <li key={index}>
             {option.text}: {option.votes} votes
           </li>
