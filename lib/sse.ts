@@ -1,3 +1,4 @@
+// lib/sse.ts
 import prisma from '@/lib/db';
 
 export function createSSEStream(pollId: string) {
